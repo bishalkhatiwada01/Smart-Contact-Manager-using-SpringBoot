@@ -16,8 +16,19 @@ public class PageController {
         model.addAttribute("name", "Bishal Khatiwada");
         model.addAttribute("youtubeChannel", "Bishal Tech");
         model.addAttribute("greeting", "Welcome to Spring Boot");
-
         return "home";
-
     }
+
+    @RequestMapping("/about")
+    public String aboutPage() {
+        System.out.println("About Page Loading!!!");
+        return "about";
+    }
+
+    @RequestMapping("/services")
+    public String servicesPage() {
+        System.out.println("Services Page Loading!!!");
+        return "services";
+    }
+
 }
