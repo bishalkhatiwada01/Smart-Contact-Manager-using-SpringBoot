@@ -49,7 +49,7 @@ function changePageTheme(theme, oldTheme) {
   //remove the current theme
 
   if (oldTheme) {
-    document.querySelector("html").classList.remove(oldTheme);
+    document.querySelector("html").classList.remove(oldTheme); 
   }
   //set the current theme
   document.querySelector("html").classList.add(theme);
